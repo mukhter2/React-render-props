@@ -13,8 +13,8 @@ export default class Counter extends React.Component {
     };
 
     render() {
-        const { render } = this.props;
+        const { children } = this.props;
         const { counter } = this.state;
-        return render(counter, this.increment);
+        return children(counter, this.increment);
     }
 }
