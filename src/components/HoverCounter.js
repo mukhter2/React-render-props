@@ -2,6 +2,7 @@ import React from 'react';
 
 export default function HoverCounter({ counter, increment, theme, switchTheme }) {
     const style = theme === 'dark' ? { backgroundColor: '#000', color: '#fff' } : null;
+    console.log('hover counter rendered');
     return (
         <div>
             {/* eslint-disable-next-line jsx-a11y/mouse-events-have-key-events */}
